@@ -4,3 +4,17 @@
 .founder-card strong{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#168fe5}
 .founder-card span{font:700 18px Manrope;color:#071a39}
 .whatsapp-link{color:#078fdf!important}
+
+/* AMD promotional banner */
+.promo-banner {
+  width: 100%;
+  overflow: hidden;
+  background: #07111f;
+  line-height: 0;
+}
+
+.promo-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
