@@ -127,3 +127,59 @@ h1 span,h2 span{color:#d7b66e}
         max-height: 60px;
     }
 }
+
+/* ====================================
+   AMD PREMIUM HEADER AND GOLD LOGO FIX
+==================================== */
+
+.site-header .nav-wrap {
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 12px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.site-header .brand {
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 auto;
+    min-width: 0;
+}
+
+.site-header .brand .brand-logo {
+    display: block;
+    width: 190px;
+    height: auto;
+    max-height: 65px;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+.site-header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    gap: 28px;
+}
+
+/* Mobile header */
+
+@media (max-width: 760px) {
+
+    .site-header .nav-wrap {
+        padding: 10px 17px;
+        gap: 12px;
+    }
+
+    .site-header .brand .brand-logo {
+        width: 155px;
+        max-height: 55px;
+    }
+
+}
