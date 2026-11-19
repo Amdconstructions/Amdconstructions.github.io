@@ -104,3 +104,26 @@ h1 span,h2 span{color:#d7b66e}
   .nav>a{border-bottom-color:rgba(201,164,92,.12)}
   .nav .nav-cta{border-color:#c9a45c}
 }
+
+/* AMD Premium Gold Footer Branding */
+
+.site-footer .footer-brand {
+    display: inline-flex;
+    align-items: center;
+}
+
+.site-footer .footer-brand .brand-logo {
+    display: block;
+    width: 220px;
+    height: auto;
+    max-height: 74px;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+@media (max-width: 760px) {
+    .site-footer .footer-brand .brand-logo {
+        width: 180px;
+        max-height: 60px;
+    }
+}
