@@ -1,0 +1,16 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g fill="none" stroke="#D7B56D" stroke-width="4"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 43 L50 10 L90 43"/>
+    <path d="M19 40 V83 H81 V40"/>
+    <path d="M39 83 V57 H61 V83"/>
+    <path d="M28 49 H39 V61 H28 Z"/>
+    <path d="M61 49 H72 V61 H61 Z"/>
+    <path d="M7 89 H93"/>
+  </g>
+  <path d="M50 10 L50 20" stroke="#F2D99D" stroke-width="3"/>
+  <text x="50" y="98" text-anchor="middle"
+        font-family="Arial,sans-serif" font-size="7"
+        fill="#D7B56D" letter-spacing="1">AMD</text>
+</svg>
