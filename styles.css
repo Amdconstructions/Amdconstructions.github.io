@@ -183,3 +183,114 @@ h1 span,h2 span{color:#d7b66e}
     }
 
 }
+
+/* ==========================================
+   AMD MOBILE NAVIGATION - FINAL FIX
+   ========================================== */
+
+@media (max-width: 760px) {
+
+    /* Header layout */
+    .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .site-header .nav-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 12px 17px;
+        gap: 12px;
+    }
+
+    /* Gold AMD logo */
+    .site-header .brand {
+        display: inline-flex;
+        align-items: center;
+        flex: 0 1 auto;
+    }
+
+    .site-header .brand .brand-logo {
+        display: block;
+        width: 155px;
+        height: auto;
+        max-height: 55px;
+        object-fit: contain;
+    }
+
+    /* Hamburger button */
+    .site-header .menu-toggle {
+        display: block;
+        flex: 0 0 44px;
+        width: 44px;
+        height: 42px;
+        margin-left: auto;
+        cursor: pointer;
+        border: 1px solid rgba(201, 164, 92, 0.5);
+        border-radius: 10px;
+        background: transparent;
+    }
+
+    .site-header .menu-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin: 5px 0;
+        background: #d7b56d;
+        border-radius: 2px;
+    }
+
+    /* Navigation hidden by default */
+    .site-header .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin: 0;
+        padding: 12px 18px 20px;
+        background: #090909;
+        border-bottom: 1px solid rgba(201, 164, 92, 0.3);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        z-index: 1001;
+    }
+
+    /* Navigation visible only when opened */
+    .site-header .nav.is-open {
+        display: flex;
+    }
+
+    /* Navigation links */
+    .site-header .nav > a {
+        display: block;
+        padding: 14px 8px;
+        color: #f5ead5;
+        border-bottom: 1px solid rgba(201, 164, 92, 0.16);
+        font-size: 14px;
+        text-align: left;
+    }
+
+    /* Quote button */
+    .site-header .nav > .nav-cta {
+        margin-top: 12px;
+        padding: 13px;
+        text-align: center;
+        color: #d7b56d;
+        border: 1px solid #c9a45c;
+        border-radius: 30px;
+    }
+
+    /* Smooth navigation scrolling */
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 85px;
+    }
+}
